@@ -10,10 +10,20 @@ npm install
 npm run dev
 ```
 
+This starts both the Vite client and the Express BFF. Frontend requests to `/api/*` are proxied to the BFF on port `3001`.
+
+The frontend source now lives under `client/`, while the Express BFF lives under `server/`.
+
 ### Compile and Minify for Production
 
 ```sh
 npm run build
+```
+
+### Run The Express BFF In Production Mode
+
+```sh
+npm run start
 ```
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
